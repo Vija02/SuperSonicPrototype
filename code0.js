@@ -211,7 +211,7 @@ gdjs.PlayAreaCode.GDEnemyBulletObjects1.length = 0;
 }
 
 
-};gdjs.PlayAreaCode.mapOfGDgdjs_46PlayAreaCode_46GDEnemyObjects1Objects = Hashtable.newFrom({"Enemy": gdjs.PlayAreaCode.GDEnemyObjects1});gdjs.PlayAreaCode.mapOfGDgdjs_46PlayAreaCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.PlayAreaCode.GDPlayerObjects1});gdjs.PlayAreaCode.userFunc0x789da8 = function(runtimeScene) {
+};gdjs.PlayAreaCode.mapOfGDgdjs_46PlayAreaCode_46GDEnemyObjects1Objects = Hashtable.newFrom({"Enemy": gdjs.PlayAreaCode.GDEnemyObjects1});gdjs.PlayAreaCode.mapOfGDgdjs_46PlayAreaCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.PlayAreaCode.GDPlayerObjects1});gdjs.PlayAreaCode.userFunc0x789cc0 = function(runtimeScene) {
 "use strict";
 // SPAWN
 if(runtimeScene.getVariables().get("spawnEnemy").getAsNumber() !== 1){
@@ -231,7 +231,7 @@ if(random < spawnChance){
 };
 gdjs.PlayAreaCode.eventsList7 = function(runtimeScene) {
 
-};gdjs.PlayAreaCode.userFunc0x78a610 = function(runtimeScene) {
+};gdjs.PlayAreaCode.userFunc0x78a528 = function(runtimeScene) {
 "use strict";
 // Just toggle
 var debugMode = runtimeScene.getVariables().get("DebugMode");
@@ -247,12 +247,12 @@ gdjs.PlayAreaCode.eventsList8 = function(runtimeScene) {
 {
 
 
-gdjs.PlayAreaCode.userFunc0x78a610(runtimeScene);
+gdjs.PlayAreaCode.userFunc0x78a528(runtimeScene);
 
 }
 
 
-};gdjs.PlayAreaCode.userFunc0x6f4260 = function(runtimeScene) {
+};gdjs.PlayAreaCode.userFunc0x6f41c0 = function(runtimeScene) {
 "use strict";
 const toToggle = runtimeScene.getVariables().get("vulnerable");
 !!toToggle.getAsNumber() ? toToggle.setNumber(0) : toToggle.setNumber(1);
@@ -262,12 +262,12 @@ gdjs.PlayAreaCode.eventsList9 = function(runtimeScene) {
 {
 
 
-gdjs.PlayAreaCode.userFunc0x6f4260(runtimeScene);
+gdjs.PlayAreaCode.userFunc0x6f41c0(runtimeScene);
 
 }
 
 
-};gdjs.PlayAreaCode.userFunc0x6f46a8 = function(runtimeScene) {
+};gdjs.PlayAreaCode.userFunc0x6f45c0 = function(runtimeScene) {
 "use strict";
 const toToggle = runtimeScene.getVariables().get("enemyShoot");
 !!toToggle.getAsNumber() ? toToggle.setNumber(0) : toToggle.setNumber(1);
@@ -277,12 +277,12 @@ gdjs.PlayAreaCode.eventsList10 = function(runtimeScene) {
 {
 
 
-gdjs.PlayAreaCode.userFunc0x6f46a8(runtimeScene);
+gdjs.PlayAreaCode.userFunc0x6f45c0(runtimeScene);
 
 }
 
 
-};gdjs.PlayAreaCode.userFunc0x6f4af0 = function(runtimeScene) {
+};gdjs.PlayAreaCode.userFunc0x6f4a08 = function(runtimeScene) {
 "use strict";
 const toToggle = runtimeScene.getVariables().get("spawnEnemy");
 !!toToggle.getAsNumber() ? toToggle.setNumber(0) : toToggle.setNumber(1);
@@ -292,14 +292,14 @@ gdjs.PlayAreaCode.eventsList11 = function(runtimeScene) {
 {
 
 
-gdjs.PlayAreaCode.userFunc0x6f4af0(runtimeScene);
+gdjs.PlayAreaCode.userFunc0x6f4a08(runtimeScene);
 
 }
 
 
 };gdjs.PlayAreaCode.mapOfGDgdjs_46PlayAreaCode_46GDEnemyObjects1Objects = Hashtable.newFrom({"Enemy": gdjs.PlayAreaCode.GDEnemyObjects1});gdjs.PlayAreaCode.eventsList12 = function(runtimeScene) {
 
-};gdjs.PlayAreaCode.userFunc0x709ca8 = function(runtimeScene) {
+};gdjs.PlayAreaCode.userFunc0x709bc8 = function(runtimeScene) {
 "use strict";
 // Generate hearts UI
 const health = runtimeScene.getObjects("Player")[0].getBehavior("Health").Health()
@@ -752,7 +752,7 @@ gdjs.PlayAreaCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisio
 {
 
 
-gdjs.PlayAreaCode.userFunc0x789da8(runtimeScene);
+gdjs.PlayAreaCode.userFunc0x789cc0(runtimeScene);
 
 }
 
@@ -996,7 +996,7 @@ gdjs.PlayAreaCode.GDPlayerObjects1.length = k;}if (gdjs.PlayAreaCode.condition0I
 {
 
 
-gdjs.PlayAreaCode.userFunc0x709ca8(runtimeScene);
+gdjs.PlayAreaCode.userFunc0x709bc8(runtimeScene);
 
 }
 

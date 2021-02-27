@@ -131,15 +131,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/spacepixels-0.2.0/Idle-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/spacepixels-0.2.0/Idle-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "NewObject-1-0.png",
         "kind": "image",
         "metadata": "",
@@ -334,15 +325,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "EnemyBullet-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "EnemyBullet-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/spacepixels-0.2.0/pixel_station_blue-1.png",
         "kind": "image",
         "metadata": "",
@@ -356,6 +338,31 @@
         "metadata": "",
         "name": "assets/debug.wav",
         "userAdded": true
+      },
+      {
+        "file": "assets/maintheme.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/maintheme.mp3",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/spacepixels-0.2.0/Idle-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/spacepixels-0.2.0/Idle-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "EnemyBullet-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "EnemyBullet-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -705,6 +712,8 @@
           ],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -713,9 +722,7 @@
               "cellWidth": 20,
               "extraBorder": 0,
               "maxSpeed": 50,
-              "name": "Pathfinding",
-              "rotateObject": false,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "rotateObject": false
             }
           ],
           "animations": [
@@ -2545,6 +2552,53 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "ETC",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "assets/maintheme.mp3",
+                "yes",
+                "5",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
